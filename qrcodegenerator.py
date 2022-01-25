@@ -6,11 +6,11 @@ qr = qrcode.QRCode(
     border = 5 #it is the white part of image -- border in all 4 sides with white color
 )
 
-data ="https://www.youtube.com/playlist?list=PLpp8-k7G_6Y3Wj1suZQ-9lATFzFuGw93x"
+data ="https://github.com/noircodes"
 # as i have give the path of my channel like the same way you can give anything
 # if you don't want to redirect and create for normal text write text in the quotes
 
 qr.add_data(data)
 qr.make(fit = True)
 img = qr.make_image(fill="black", back_color = "white")
-img.save("test.png")
+img.save("qrcode.png")
